@@ -1,15 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/inicio.css">
-    <title>AGENTE BANORTE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Banorte</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .left-section, .right-section {
+            height: 100vh;
+        }
+        .left-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .right-section {
+            padding: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f8f9fa;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    
-    <script src="JS/bootstrap.bundle.min.js"></script>
-    <script src="JS/inicio.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Banorte</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(actual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 left-section">
+                <h2>Chatbot de Atención al Cliente</h2>
+                <div class="chatbot-interface">
+                    <!-- Chatbot interface goes here -->
+                    <p>Interfaz de chatbot para interactuar con un AI para servicio al cliente y soporte.</p>
+                </div>
+            </div>
+            <div class="col-md-6 right-section">
+                <h2>Datos Financieros del Cliente</h2>
+                <div class="financial-data">
+                    <h4>Saldo de Cuentas</h4>
+                    <p>Cuenta Corriente: $10,000</p>
+                    <p>Cuenta de Ahorros: $5,000</p>
+                    <h4>Transacciones Recientes</h4>
+                    <ul>
+                        <li>Depósito: $1,000</li>
+                        <li>Retiro: $500</li>
+                        <li>Pago de Servicios: $200</li>
+                    </ul>
+                    <h4>Insights Financieros</h4>
+                    <p>Gastos Mensuales: $1,700</p>
+                    <p>Ingresos Mensuales: $2,000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Banorte</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-</html>
+</html> 
